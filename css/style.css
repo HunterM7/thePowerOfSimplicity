@@ -122,7 +122,21 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 15px;
-  background: linear-gradient(125deg, #FC3F5F 0%, #7D61FF 100.32%);
+  background: linear-gradient(125deg, #FC3F5F 0%, #7D61FF 100%);
+}
+
+h1 {
+  font-size: 72px;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #F2F4F7;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.16;
+  color: rgba(242, 244, 247, 0.3);
 }
 
 .window {
@@ -149,6 +163,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  margin-bottom: 216px;
 }
 
 .header__logo {
@@ -181,6 +197,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
   color: #A0A3A7;
 }
 
@@ -195,4 +214,18 @@ body {
 
 .nav__link:last-child {
   margin-right: 0;
+}
+
+.content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content__title {
+  margin-bottom: 32px;
+}
+
+.content__text {
+  margin-bottom: 80px;
 }

@@ -137,7 +137,12 @@ p {
 	}
 
 	&__btn {
+		font-size: 18px;
 
+		padding: 16px 96px;
+
+		border: 2px solid $Light;
+		border-radius: 100px;
 	}
 }
 

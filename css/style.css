@@ -229,3 +229,10 @@ p {
 .content__text {
   margin-bottom: 80px;
 }
+
+.content__btn {
+  font-size: 18px;
+  padding: 16px 96px;
+  border: 2px solid #F2F4F7;
+  border-radius: 100px;
+}

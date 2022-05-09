@@ -23,15 +23,6 @@ body {
 	font-size: 14px;
 	font-weight: 400;
 	color: $Light;
-
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-
-	padding: 15px;
-
-	background: $GradientPrimary;
 }
 
 h1 {
@@ -45,7 +36,21 @@ p {
 	font-size: 18px;
 	font-weight: 300;
 	line-height: 1.16;
+	letter-spacing: 0.2px;
 	color: rgba($Light, 0.3);
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+
+	padding: 60px;
+
+	background: $GradientPrimary;
 }
 
 .window {
@@ -69,7 +74,7 @@ p {
 
 	position: relative;
 
-	margin-bottom: 216px;
+	margin-bottom: 220px;
 
 	&__logo {
 		display: block;
@@ -139,12 +144,80 @@ p {
 	&__btn {
 		font-size: 18px;
 
+		display: inline-block;
+
 		padding: 16px 96px;
+		margin-bottom: 64px;
 
 		border: 2px solid $Light;
 		border-radius: 100px;
 	}
 }
 
+
+// ==============
+
+// === Nav bar ===
+
+.nav-bar {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	margin-bottom: 204px;
+
+	&__item {
+		width: 16px;
+		height: 16px;
+
+		display: inline-block;
+
+		margin: 16px;
+
+		position: relative;
+
+		a {
+			display: inline-block;
+
+			z-index: 100;
+
+			width: 100%;
+			height: 100%;
+
+			cursor: pointer;
+		}
+
+		&::before {
+			content: "";
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-image: url('../img/nav-icon-gray.svg');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+
+			z-index: 0;
+		}
+
+		&.active::after {
+			content: "";
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-image: url('../img/nav-icon-white.svg');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+	}
+}
+.active {
+}
 
 // ==============
